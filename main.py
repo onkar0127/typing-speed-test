@@ -26,6 +26,7 @@ def calculate_accuracy(original, typed):
 
 def main():
     st.title("Typing Speed Test")
+    st.balloons()
 
     # Initialize session state variables
     if 'start_time' not in st.session_state:
@@ -50,6 +51,7 @@ def main():
     # Start button
     if not st.session_state.test_active:
         if st.button("Start Test"):
+            st.balloons()
             st.session_state.test_active = True
             st.session_state.start_time = datetime.now()
             st.session_state.submitted = False
